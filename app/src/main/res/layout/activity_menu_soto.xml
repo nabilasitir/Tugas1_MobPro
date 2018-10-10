@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuSoto">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Makanan"
+        android:textSize="25dp"
+        android:fontFamily="sans-serif"
+        android:padding="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:id="@+id/tv_makanan"
+        android:textAlignment="center"
+        />
+
+    <ImageView
+        android:id="@+id/iv_soto1"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/tv_makanan"
+        android:padding="10dp"
+        android:src="@drawable/soto1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_makanan"
+                android:layout_toRightOf="@id/iv_soto1"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Soto Ayam"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Rp. 15000"
+                    />
+                <EditText
+                    android:id="@+id/jmlsotoayam"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:hint="0"
+                    android:textSize="12dp"
+                    android:textAlignment="center"
+                    />
+            </LinearLayout>
+         <ImageView
+            android:id="@+id/iv_soto2"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/iv_soto1"
+            android:padding="10dp"
+            android:src="@drawable/soto2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_makanan"
+                android:layout_toRightOf="@id/iv_soto2"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="80dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Soto Daging"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Rp. 25000"
+                    />
+                <EditText
+                    android:id="@+id/jmlsotodaging"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:hint="0"
+                    android:textSize="12dp"
+                    android:textAlignment="center"
+                    />
+            </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_soto3"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/iv_soto2"
+            android:padding="10dp"
+            android:src="@drawable/soto3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_makanan"
+                android:layout_toRightOf="@id/iv_soto3"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="160dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Soto Special"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Rp. 20000"
+                    />
+                <EditText
+                    android:id="@+id/jmlsotospecial"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:hint="0"
+                    android:textSize="12dp"
+                    android:textAlignment="center"
+                    />
+            </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Minuman"
+        android:textSize="25dp"
+        android:fontFamily="sans-serif"
+        android:padding="10dp"
+
+        android:background="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:id="@+id/tv_minuman"
+        android:textAlignment="center"
+        android:layout_below="@id/iv_soto3"
+        />
+
+    <ImageView
+        android:id="@+id/iv_esteh"
+        android:layout_width="100dp"
+        android:layout_height="79dp"
+        android:layout_below="@id/tv_minuman"
+        android:padding="10dp"
+        android:src="@drawable/esteh" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_makanan"
+            android:layout_toRightOf="@id/iv_soto3"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="293dp">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="Es Teh Manis"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="Rp. 4000"
+                />
+            <EditText
+                android:id="@+id/jmlesteh"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:hint="0"
+                android:textSize="12dp"
+                android:textAlignment="center"
+                />
+        </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_esjeruk"
+        android:layout_width="100dp"
+        android:layout_height="79dp"
+        android:layout_below="@id/iv_esteh"
+        android:padding="10dp"
+        android:src="@drawable/esjeruk" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_makanan"
+        android:layout_toRightOf="@id/iv_soto3"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="370dp">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Es Teh Manis"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Rp. 4000"
+            />
+        <EditText
+            android:id="@+id/jmlesjeruk"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:hint="0"
+            android:textSize="12dp"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pesan"
+        android:layout_toRightOf="@id/iv_esjeruk"
+        android:layout_below="@id/iv_esteh"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="25dp"
+        android:onClick="Pesan"/>
+</RelativeLayout>

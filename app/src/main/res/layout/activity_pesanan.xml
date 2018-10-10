@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pesanan">
+
+    <TextView
+        android:id="@+id/iv_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pesanan Anda"
+        android:textSize="25dp"
+        android:padding="10dp"
+        />
+    <TextView
+        android:id="@+id/menuitem"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="soto Ayam"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:layout_below="@id/iv_text1"
+        />
+
+    <TextView
+        android:id="@+id/jumlahitem"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:layout_marginLeft="30dp"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/iv_text1"
+        android:textAlignment="center"
+        android:layout_toRightOf="@id/menuitem"/>
+
+    <TextView
+        android:id="@+id/totalitem"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Rp 15000"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:layout_below="@id/iv_text1"
+        android:layout_toRightOf="@id/jumlahitem"/>
+
+    <TextView
+        android:id="@+id/iv_text5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Bayar"
+        android:textSize="25dp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/menuitem"/>
+    <TextView
+        android:id="@+id/bayar"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Rp 55000"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:layout_below="@id/iv_text5"
+        />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/bayar"
+        android:text="Selesai"
+        android:onClick="Detail"/>
+
+</RelativeLayout>
